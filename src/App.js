@@ -16,7 +16,7 @@ function App() {
     <p>Second Counter</p>
     <CounterHooks initialNumber={0} />
     <button onClick={() => setTheme(prevTheme => { 
-      return prevTheme == 'red' ? 'blue' : 'red'
+      return prevTheme === 'red' ? 'blue' : 'red'
     })}>Change Color</button>
     </ ThemeContext.Provider>
   )
